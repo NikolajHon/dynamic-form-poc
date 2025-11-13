@@ -30,6 +30,11 @@ public class DecisionTableEngine {
                         ? ""
                         : ctx.getDiscounts().iterator().next().name());
 
+        vars.put("age", ctx.getAge());
+        vars.put("zone", ctx.getZone() != null ? ctx.getZone().name() : "");
+        vars.put("spousePhone", ctx.getProfile().spousePhone().orElse(""));
+        vars.put("addressVerified", ctx.isAddressVerified());
+
         System.out.println("DMN INPUT VARS = " + vars);
 
         DmnDecisionTableResult result = engine.evaluateDecisionTable(decision, vars);

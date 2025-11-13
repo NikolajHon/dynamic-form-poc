@@ -19,7 +19,7 @@ public class DemoRunner {
                 30,
                 Zone.C,
                 new Profile(null),
-                false
+                true
         );
 
         EvaluationContext ctxComplex = new EvaluationContext(
@@ -29,7 +29,7 @@ public class DemoRunner {
                 70,
                 Zone.A,
                 new Profile("+421900123456"),
-                false
+                true
         );
         EvaluationContext ctxChild = new EvaluationContext(
                 "TENANT_A",
