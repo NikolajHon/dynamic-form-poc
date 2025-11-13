@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="openbpm-bpm-inspector-state">
+    <option name="statesByFile">
+      <map>
+        <entry key="$PROJECT_DIR$/src/main/resources/dmn/tenant_A_basic.dmn">
+          <value>
+            <FileInspectorState>
+              <option name="statesByElementId">
+                <map>
+                  <entry key="">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Rule" />
+                          <option value="Rule|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="DecisionTable_1">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Decision Table" />
+                          <option value="Decision Table|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="DetermineFields">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Decision" />
+                          <option value="Decision|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="r1_discount">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Input Entry" />
+                          <option value="Input Entry|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="r1_zone">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Input Entry" />
+                          <option value="Input Entry|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="r3_age">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Input Entry" />
+                          <option value="Input Entry|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="r3_discount">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Input Entry" />
+                          <option value="Input Entry|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="r3_out">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Output Entry" />
+                          <option value="Output Entry|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="r3_zone">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Input Entry" />
+                          <option value="Input Entry|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="r4_age">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Input Entry" />
+                          <option value="Input Entry|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="r4_zone">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Input Entry" />
+                          <option value="Input Entry|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="rule_3">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Rule" />
+                          <option value="Rule|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="rule_4">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Rule" />
+                          <option value="Rule|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="tenant_A_basic_model">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Dmn Root Definitions" />
+                          <option value="Dmn Root Definitions|General" />
+                          <option value="Dmn Root Definitions|Other" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </FileInspectorState>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/dmn/test.dmn">
+          <value>
+            <FileInspectorState>
+              <option name="statesByElementId">
+                <map>
+                  <entry key="DecisionTable_1">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Decision Table" />
+                          <option value="Decision Table|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="DetermineFields">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Decision" />
+                          <option value="Decision|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="r2_addr">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Input Entry" />
+                          <option value="Input Entry|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="r2_out2">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Output Entry" />
+                          <option value="Output Entry|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="r2_zone">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Input Entry" />
+                          <option value="Input Entry|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="r3_age">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Input Entry" />
+                          <option value="Input Entry|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="r3_out">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Output Entry" />
+                          <option value="Output Entry|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="r3_zone">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Input Entry" />
+                          <option value="Input Entry|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="r4_age">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Input Entry" />
+                          <option value="Input Entry|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="r4_out">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Output Entry" />
+                          <option value="Output Entry|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="r4_zone">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Input Entry" />
+                          <option value="Input Entry|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="rule_2">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Rule" />
+                          <option value="Rule|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="rule_3">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Rule" />
+                          <option value="Rule|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="rule_4">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Rule" />
+                          <option value="Rule|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="tenant_A_basic_model">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Dmn Root Definitions" />
+                          <option value="Dmn Root Definitions|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </FileInspectorState>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -5,11 +5,33 @@
   <groupId>com.example</groupId>
   <artifactId>dynamic-form-poc</artifactId>
   <version>1.0.0</version>
-  <name>Dynamic Form PoC (pure Java)</name>
+  <name>Dynamic Form PoC (pure Java) + engine dmn</name>
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
   </properties>
+    <dependencies>
+        <!-- Camunda DMN Engine -->
+        <dependency>
+            <groupId>org.camunda.bpm.dmn</groupId>
+            <artifactId>camunda-engine-dmn</artifactId>
+            <version>7.20.0</version>
+        </dependency>
+
+        <!-- FEEL (Camunda Expression Language) -->
+        <dependency>
+            <groupId>org.camunda.feel</groupId>
+            <artifactId>feel-engine</artifactId>
+            <version>1.16.0</version>
+        </dependency>
+
+        <!-- simple logging backend -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-jdk14</artifactId>
+            <version>2.0.16</version>
+        </dependency>
+    </dependencies>
   <build>
     <plugins>
       <plugin>

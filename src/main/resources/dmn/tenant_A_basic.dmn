@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" id="tenant_A_basic_model" name="TenantA Basic Decision Table" namespace="http://example.com/dmn/tenantA">
+  <decision id="DetermineFields" name="DetermineFields">
+    <variable id="fields_var" name="fields" typeRef="string" />
+    <decisionTable id="DecisionTable_1" hitPolicy="COLLECT">
+      <input id="in_discount">
+        <inputExpression id="in_discount_expr" typeRef="string">
+          <text>discount</text>
+        </inputExpression>
+      </input>
+      <output id="out_fields" name="fields" typeRef="string" />
+      <rule id="rule_1">
+        <inputEntry id="r1_discount" expressionLanguage="feel">
+          <text>"TZP"</text>
+        </inputEntry>
+        <outputEntry id="r1_out" expressionLanguage="feel">
+          <text>"TZP_CARD_ID"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>
