@@ -1,10 +1,10 @@
-package com.example.dynamicform.approach1;
+package com.example.dynamicform.models.analyticky_model;
 
 import com.example.dynamicform.domain.*;
 
 import java.util.*;
 
-import static com.example.dynamicform.approach1.Conditions.*;
+import static com.example.dynamicform.models.analyticky_model.Conditions.*;
 
 public final class AnalyticalModelConfig {
 

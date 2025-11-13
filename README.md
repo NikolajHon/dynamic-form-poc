@@ -30,9 +30,9 @@ You should see the output for both scenarios and for all three approaches.
 ## Project layout
 
 - `com.example.dynamicform.domain` – core domain (context, enums, output definition).
-- `com.example.dynamicform.approach1` – Analytical Model (config + evaluator).
-- `com.example.dynamicform.approach2` – Predicates (per-tenant rules as lambdas).
-- `com.example.dynamicform.approach3` – DMN-like decision table and field registry.
+- `com.example.dynamicform.models.analyticky_model` – Analytical Model (config + evaluator).
+- `com.example.dynamicform.models.predikaty` – Predicates (per-tenant rules as lambdas).
+- `com.example.dynamicform.models.dmn` – DMN-like decision table and field registry.
 - `com.example.dynamicform.DemoRunner` – main class that runs both scenarios.
 
 ## Adding a new discount/condition in each approach

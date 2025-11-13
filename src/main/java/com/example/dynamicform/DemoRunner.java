@@ -1,9 +1,9 @@
 
 package com.example.dynamicform;
 
-import com.example.dynamicform.approach1.AnalyticalModelEvaluator;
-import com.example.dynamicform.approach2.PredicatesEngine;
-import com.example.dynamicform.approach3.DecisionTableEngine;
+import com.example.dynamicform.models.analyticky_model.AnalyticalModelEvaluator;
+import com.example.dynamicform.models.predikaty.PredicatesEngine;
+import com.example.dynamicform.models.dmn.DecisionTableEngine;
 import com.example.dynamicform.domain.*;
 
 import java.util.List;

@@ -1,5 +1,5 @@
 
-package com.example.dynamicform.approach3;
+package com.example.dynamicform.models.dmn;
 
 import com.example.dynamicform.domain.EvaluationContext;
 import com.example.dynamicform.domain.FieldDefinition;

@@ -1,5 +1,5 @@
 
-package com.example.dynamicform.approach1;
+package com.example.dynamicform.models.analyticky_model;
 
 import com.example.dynamicform.domain.*;
 

@@ -1,5 +1,5 @@
 
-package com.example.dynamicform.approach2;
+package com.example.dynamicform.models.predikaty;
 
 import com.example.dynamicform.domain.EvaluationContext;
 import com.example.dynamicform.domain.FieldDefinition;
