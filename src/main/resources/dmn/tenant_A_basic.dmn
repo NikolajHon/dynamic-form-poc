@@ -1,114 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" id="tenant_A_basic_model" name="TenantA Basic Decision Table" namespace="http://example.com/dmn/tenantA">
-  <decision id="DetermineFields" name="DetermineFields">
-    <variable id="fields_var" name="fields" typeRef="string" />
-    <decisionTable id="DecisionTable_1" hitPolicy="COLLECT">
-      <input id="in_discount">
-        <inputExpression id="in_discount_expr" typeRef="string">
-          <text>discount</text>
-        </inputExpression>
-      </input>
-      <input id="in_age">
-        <inputExpression id="in_age_expr" typeRef="number">
-          <text>age</text>
-        </inputExpression>
-      </input>
-      <input id="in_zone">
-        <inputExpression id="in_zone_expr" typeRef="string">
-          <text>zone</text>
-        </inputExpression>
-      </input>
-      <input id="in_spousePhone">
-        <inputExpression id="in_spousePhone_expr" typeRef="string">
-          <text>spousePhone</text>
-        </inputExpression>
-      </input>
-      <input id="in_addressVerified">
-        <inputExpression id="in_addressVerified_expr" typeRef="boolean">
-          <text>addressVerified</text>
-        </inputExpression>
-      </input>
-      <output id="out_fields" name="fields" typeRef="string" />
-      <rule id="rule_1">
-        <inputEntry>
-          <text>"TZP"</text>
-        </inputEntry>
-        <inputEntry>
-          <text>-</text>
-        </inputEntry>
-        <inputEntry>
-          <text>-</text>
-        </inputEntry>
-        <inputEntry>
-          <text>-</text>
-        </inputEntry>
-        <inputEntry>
-          <text>-</text>
-        </inputEntry>
-        <outputEntry>
-          <text>"TZP_CARD_ID"</text>
-        </outputEntry>
-      </rule>
-      <rule id="rule_2">
-        <inputEntry id="r2_discount">
-          <text>-</text>
-        </inputEntry>
-        <inputEntry id="r2_age">
-          <text>&gt;= 65</text>
-        </inputEntry>
-        <inputEntry id="r2_zone">
-          <text>["A","B"]</text>
-        </inputEntry>
-        <inputEntry id="r2_spouse">
-          <text>-</text>
-        </inputEntry>
-        <inputEntry id="r2_addr">
-          <text>-</text>
-        </inputEntry>
-        <outputEntry id="r2_out">
-          <text>"SPOUSE_PHONE"</text>
-        </outputEntry>
-      </rule>
-      <rule id="rule_3">
-        <inputEntry>
-          <text>-</text>
-        </inputEntry>
-        <inputEntry>
-          <text>&lt; 15</text>
-        </inputEntry>
-        <inputEntry>
-          <text>"C"</text>
-        </inputEntry>
-        <inputEntry>
-          <text>""</text>
-        </inputEntry>
-        <inputEntry>
-          <text>-</text>
-        </inputEntry>
-        <outputEntry>
-          <text>"EMERGENCY_CONTACT"</text>
-        </outputEntry>
-      </rule>
-      <rule id="rule_4">
-        <inputEntry>
-          <text>-</text>
-        </inputEntry>
-        <inputEntry>
-          <text>-</text>
-        </inputEntry>
-        <inputEntry>
-          <text>-</text>
-        </inputEntry>
-        <inputEntry>
-          <text>-</text>
-        </inputEntry>
-        <inputEntry>
-          <text>false</text>
-        </inputEntry>
-        <outputEntry>
-          <text>"ADDRESS_PROOF_DOCUMENT"</text>
-        </outputEntry>
-      </rule>
-    </decisionTable>
-  </decision>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" id="tenant_A_basic_model"
+             name="TenantA Basic Decision Table" namespace="http://example.com/dmn/tenantA">
+    <decision id="DetermineFields" name="DetermineFields">
+        <variable id="fields_var" name="fields" typeRef="string"/>
+        <decisionTable id="DecisionTable_1" hitPolicy="COLLECT">
+            <input id="in_discount">
+                <inputExpression id="in_discount_expr" typeRef="string">
+                    <text>discount</text>
+                </inputExpression>
+            </input>
+            <input id="in_age">
+                <inputExpression id="in_age_expr" typeRef="number">
+                    <text>age</text>
+                </inputExpression>
+            </input>
+            <input id="in_zone">
+                <inputExpression id="in_zone_expr" typeRef="string">
+                    <text>zone</text>
+                </inputExpression>
+            </input>
+            <input id="in_spousePhone">
+                <inputExpression id="in_spousePhone_expr" typeRef="string">
+                    <text>spousePhone</text>
+                </inputExpression>
+            </input>
+            <input id="in_addressVerified">
+                <inputExpression id="in_addressVerified_expr" typeRef="boolean">
+                    <text>addressVerified</text>
+                </inputExpression>
+            </input>
+            <output id="out_fields" name="fields" typeRef="string"/>
+            <rule id="rule_1">
+                <inputEntry>
+                    <text>"TZP"</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>"TZP_CARD_ID"</text>
+                </outputEntry>
+            </rule>
+            <rule id="rule_2">
+                <inputEntry id="r2_discount">
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry id="r2_age">
+                    <text>&gt;= 65</text>
+                </inputEntry>
+                <inputEntry id="r2_zone">
+                    <text>["A","B"]</text>
+                </inputEntry>
+                <inputEntry id="r2_spouse">
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry id="r2_addr">
+                    <text>-</text>
+                </inputEntry>
+                <outputEntry id="r2_out">
+                    <text>"SPOUSE_PHONE"</text>
+                </outputEntry>
+            </rule>
+            <rule id="rule_3">
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>&lt; 15</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>"C"</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>""</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>"EMERGENCY_CONTACT"</text>
+                </outputEntry>
+            </rule>
+            <rule id="rule_4">
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>-</text>
+                </inputEntry>
+                <inputEntry>
+                    <text>false</text>
+                </inputEntry>
+                <outputEntry>
+                    <text>"ADDRESS_PROOF_DOCUMENT"</text>
+                </outputEntry>
+            </rule>
+        </decisionTable>
+    </decision>
 </definitions>
