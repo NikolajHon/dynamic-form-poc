@@ -1,24 +1,36 @@
 package com.example.dynamicform.models.dmn;
 
+import com.example.dynamicform.config.DmnProperties;
 import com.example.dynamicform.domain.EvaluationContext;
 import com.example.dynamicform.domain.FieldDefinition;
 import org.camunda.bpm.dmn.engine.*;
-
+import org.springframework.stereotype.Component;
+import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.*;
 
+@Component
 public class DecisionTableEngine {
 
     private final DmnEngine engine;
     private final DmnDecision decision;
 
-    public DecisionTableEngine() {
+    public DecisionTableEngine(DmnProperties props) {
+
         this.engine = DmnEngineConfiguration
                 .createDefaultDmnEngineConfiguration()
                 .buildEngine();
 
-        InputStream dmn = getClass().getResourceAsStream("/dmn/tenant_A_basic.dmn");
-        this.decision = engine.parseDecision("DetermineFields", dmn);
+        String dmnPath = props.getPath();
+        if (dmnPath == null || dmnPath.isBlank()) {
+            throw new IllegalStateException("dmn.path is not specified in application.yml");
+        }
+
+        try (InputStream dmnFile = new FileInputStream(dmnPath)) {
+            this.decision = engine.parseDecision("DetermineFields", dmnFile);
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to load DMN: " + dmnPath, e);
+        }
     }
 
     public List<FieldDefinition> evaluate(EvaluationContext ctx) {

@@ -3,10 +3,12 @@ package com.example.dynamicform.models.analyticky_model;
 
 import com.example.dynamicform.domain.EvaluationContext;
 import com.example.dynamicform.domain.FieldDefinition;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class AnalyticalModelEvaluator {
 
     public List<FieldDefinition> evaluate(EvaluationContext ctx) {

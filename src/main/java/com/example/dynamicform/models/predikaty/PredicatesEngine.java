@@ -3,10 +3,12 @@ package com.example.dynamicform.models.predikaty;
 
 import com.example.dynamicform.domain.EvaluationContext;
 import com.example.dynamicform.domain.FieldDefinition;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class PredicatesEngine {
 
     public List<FieldDefinition> evaluate(EvaluationContext ctx) {

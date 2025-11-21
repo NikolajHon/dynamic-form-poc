@@ -1,17 +1,35 @@
+package com.example.dynamicform.runner;
 
-package com.example.dynamicform;
-
+import com.example.dynamicform.domain.*;
 import com.example.dynamicform.models.analyticky_model.AnalyticalModelEvaluator;
 import com.example.dynamicform.models.predikaty.PredicatesEngine;
 import com.example.dynamicform.models.dmn.DecisionTableEngine;
-import com.example.dynamicform.domain.*;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Set;
 
-public class DemoRunner {
+@Component
+public class DemoRunner implements CommandLineRunner {
 
-    public static void main(String[] args) {
+    private final AnalyticalModelEvaluator analytical;
+    private final PredicatesEngine predicates;
+    private final DecisionTableEngine dmn;
+
+    public DemoRunner(
+            AnalyticalModelEvaluator analytical,
+            PredicatesEngine predicates,
+            DecisionTableEngine dmn
+    ) {
+        this.analytical = analytical;
+        this.predicates = predicates;
+        this.dmn = dmn;
+    }
+
+    @Override
+    public void run(String... args) {
+
         EvaluationContext ctxSimple = new EvaluationContext(
                 "TENANT_A",
                 CardScheme.BASIC,
@@ -31,6 +49,7 @@ public class DemoRunner {
                 new Profile("+421900123456"),
                 true
         );
+
         EvaluationContext ctxChild = new EvaluationContext(
                 "TENANT_A",
                 CardScheme.BASIC,
@@ -41,20 +60,12 @@ public class DemoRunner {
                 false
         );
 
-        AnalyticalModelEvaluator analytical = new AnalyticalModelEvaluator();
-        PredicatesEngine predicates = new PredicatesEngine();
-        DecisionTableEngine dmn = new DecisionTableEngine();
-
-        runScenario("SIMPLE (discount TZP)", ctxSimple, analytical, predicates, dmn);
-        runScenario("COMPLEX (discount present + age>=65 + zone A/B)", ctxComplex, analytical, predicates, dmn);
-        runScenario("CHILD RULE (age < 15 + zone C)", ctxChild, analytical, predicates, dmn);
-
+        runScenario("SIMPLE (discount TZP)", ctxSimple);
+        runScenario("COMPLEX (discount present + age>=65 + zone A/B)", ctxComplex);
+        runScenario("CHILD RULE (age < 15 + zone C)", ctxChild);
     }
 
-    private static void runScenario(String title, EvaluationContext ctx,
-                                   AnalyticalModelEvaluator analytical,
-                                   PredicatesEngine predicates,
-                                   DecisionTableEngine dmn) {
+    private void runScenario(String title, EvaluationContext ctx) {
         System.out.println("==================================================");
         System.out.println("Scenario: " + title);
         System.out.println("Context:  " + ctx);
@@ -67,7 +78,7 @@ public class DemoRunner {
         System.out.println();
     }
 
-    private static void print(String header, List<FieldDefinition> fields) {
+    private void print(String header, List<FieldDefinition> fields) {
         System.out.println(header);
         if (fields.isEmpty()) {
             System.out.println("  (no dynamic fields)");
