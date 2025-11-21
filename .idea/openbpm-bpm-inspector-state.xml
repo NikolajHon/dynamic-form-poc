@@ -38,6 +38,25 @@
                       </ExpandedItems>
                     </value>
                   </entry>
+                  <entry key="in_zone">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Input Item" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="out_fields">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Output Item" />
+                          <option value="Output Item|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
                   <entry key="r1_discount">
                     <value>
                       <ExpandedItems>
@@ -54,6 +73,16 @@
                         <option name="items">
                           <option value="Input Entry" />
                           <option value="Input Entry|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="r2_out">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Output Entry" />
+                          <option value="Output Entry|General" />
                         </option>
                       </ExpandedItems>
                     </value>
@@ -114,6 +143,26 @@
                         <option name="items">
                           <option value="Input Entry" />
                           <option value="Input Entry|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="rule_1">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Rule" />
+                          <option value="Rule|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="rule_2">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Rule" />
+                          <option value="Rule|General" />
                         </option>
                       </ExpandedItems>
                     </value>
