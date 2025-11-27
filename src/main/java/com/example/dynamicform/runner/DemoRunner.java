@@ -36,7 +36,7 @@ public class DemoRunner implements CommandLineRunner {
                 Set.of(Discount.TZP),
                 30,
                 Zone.C,
-                new Profile(null),
+                new Profile(null, null, null),
                 true
         );
 
@@ -46,7 +46,7 @@ public class DemoRunner implements CommandLineRunner {
                 Set.of(Discount.SENIOR),
                 70,
                 Zone.A,
-                new Profile("+421900123456"),
+                new Profile("+421900123456", "+421900789123", new Profile("+421950398926", "+111111111111", null)),
                 true
         );
 
@@ -56,7 +56,7 @@ public class DemoRunner implements CommandLineRunner {
                 Set.of(),
                 12,
                 Zone.C,
-                new Profile(null),
+                new Profile(null, null, null),
                 false
         );
 

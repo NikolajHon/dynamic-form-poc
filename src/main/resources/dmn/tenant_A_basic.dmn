@@ -87,7 +87,7 @@
           <text>""</text>
         </outputEntry>
         <outputEntry>
-          <text>"PROFILE.SPOUSE_PHONE"</text>
+          <text>"profile.parentProfile.spousePhone"</text>
         </outputEntry>
       </rule>
       <rule id="rule_3">

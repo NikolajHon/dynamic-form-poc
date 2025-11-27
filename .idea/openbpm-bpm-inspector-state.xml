@@ -38,6 +38,24 @@
                       </ExpandedItems>
                     </value>
                   </entry>
+                  <entry key="in_age_expr">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Input Expression" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="in_discount_expr">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Input Expression" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
                   <entry key="in_zone">
                     <value>
                       <ExpandedItems>
@@ -48,6 +66,16 @@
                     </value>
                   </entry>
                   <entry key="out_fields">
+                    <value>
+                      <ExpandedItems>
+                        <option name="items">
+                          <option value="Output Item" />
+                          <option value="Output Item|General" />
+                        </option>
+                      </ExpandedItems>
+                    </value>
+                  </entry>
+                  <entry key="out_key">
                     <value>
                       <ExpandedItems>
                         <option name="items">
