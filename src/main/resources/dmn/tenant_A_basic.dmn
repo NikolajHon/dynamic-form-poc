@@ -29,6 +29,8 @@
         </inputExpression>
       </input>
       <output id="out_key" name="fieldKey" typeRef="string" />
+      <output id="out_label" name="fieldLabel" typeRef="string" />
+      <output id="out_type" name="fieldType" typeRef="string" />
       <output id="out_mand" name="mandatory" typeRef="boolean" />
       <output id="out_default" name="defaultValue" typeRef="string" />
       <output id="out_source" name="defaultSource" typeRef="string" />
@@ -50,6 +52,12 @@
         </inputEntry>
         <outputEntry>
           <text>"TZP_CARD_ID"</text>
+        </outputEntry>
+        <outputEntry>
+          <text>"Číslo TZP preukazu"</text>
+        </outputEntry>
+        <outputEntry>
+          <text>"STRING"</text>
         </outputEntry>
         <outputEntry>
           <text>true</text>
@@ -81,6 +89,12 @@
           <text>"SPOUSE_PHONE"</text>
         </outputEntry>
         <outputEntry>
+          <text>"Telefónne číslo manželky"</text>
+        </outputEntry>
+        <outputEntry>
+          <text>"STRING"</text>
+        </outputEntry>
+        <outputEntry>
           <text>true</text>
         </outputEntry>
         <outputEntry>
@@ -110,6 +124,12 @@
           <text>"EMERGENCY_CONTACT"</text>
         </outputEntry>
         <outputEntry>
+          <text>"Kontaktná osoba pre núdzové situácie"</text>
+        </outputEntry>
+        <outputEntry>
+          <text>"STRING"</text>
+        </outputEntry>
+        <outputEntry>
           <text>true</text>
         </outputEntry>
         <outputEntry>
@@ -137,6 +157,12 @@
         </inputEntry>
         <outputEntry>
           <text>"ADDRESS_PROOF_DOCUMENT"</text>
+        </outputEntry>
+        <outputEntry>
+          <text>"Doklad o potvrdení adresy"</text>
+        </outputEntry>
+        <outputEntry>
+          <text>"STRING"</text>
         </outputEntry>
         <outputEntry>
           <text>true</text>

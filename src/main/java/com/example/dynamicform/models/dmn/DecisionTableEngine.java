@@ -1,6 +1,7 @@
 package com.example.dynamicform.models.dmn;
 
 import com.example.dynamicform.config.DmnProperties;
+import com.example.dynamicform.domain.DataType;
 import com.example.dynamicform.domain.EvaluationContext;
 import com.example.dynamicform.domain.FieldDefinition;
 import org.camunda.bpm.dmn.engine.*;
@@ -52,9 +53,10 @@ public class DecisionTableEngine {
             Boolean mandatory = rule.getEntry("mandatory");
             String defaultValue = rule.getEntry("defaultValue");
             String defaultSource = rule.getEntry("defaultSource");
+            String label = rule.getEntry("fieldLabel");
+            String type = rule.getEntry("fieldType");
 
-            var meta = FieldRegistry.lookup(key)
-                    .orElseThrow(() -> new IllegalStateException("Unknown field: " + key));
+            DataType dataType = DataType.valueOf(type);
 
             String finalDefault;
 
@@ -67,13 +69,14 @@ public class DecisionTableEngine {
             }
 
             out.add(new FieldDefinition(
-                    key,
-                    meta.label(),
-                    meta.dataType(),
-                    mandatory != null ? mandatory : false,
-                    Optional.ofNullable(finalDefault),
-                    "DMN"
-            ));
+                            key,
+                            label,
+                            dataType,
+                            mandatory,
+                            Optional.ofNullable(finalDefault),
+                            "DMN"
+                    )
+            );
         }
 
         return out;
